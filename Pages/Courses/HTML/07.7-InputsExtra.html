@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs Extra</title>
+</head>
+<body>
+    <p><a href="index.html">Index</a></p>
+    <p><a href="07-Formularis.html">Formularis</a></p>
+    
+    <h2>Input Extra</h2>
+    <h3>Input tipus color</h3>
+    <p>Un input de tipus color permet triar un color en una paleta de colors, si feu una pagina on l'usuari hagi d'escollir un color per a algun item en concret o el color de fons d'una pagina us anira molt be</p> 
+    <form>
+        <input type="color">
+    </form>
+
+    <h3>Input de tipus number</h3>
+    <p>Ens deixa posar numeros. Les petites fletxes que surten a la dreta per pujar i baixar el numero es diuen widgets, Aquest input s'ha d'utilitzar per temes numerics que no siguin dates, per demanar dates ja tenim d'altres</p>
+    <form>
+        <input type="number">
+    </form>
+
+    <h3>Input de tpus range</h3>
+    <p>Ens pinta una barra que podem modificar per seleccionar un valor. Accepta l'atribut step que determina de quant en quant es mou la nostra barra. També té l'atribut min i max</p>
+    <form>
+        <input type="range">
+    </form>
+    <h4>Atribut step</h4>
+    <form>
+        <input type="range" step="20">
+    </form>
+    <h4>Atributs min i max</h4>
+    <form>
+        <input type="range" step="10" min="0" max="30">
+    </form>
+
+    <h3>Input de tipus reset</h3>
+    <p>Es crea un boto que permet borrar tots els camps del form</p>
+
+    <form>
+        <label>Nom</label><input type="text">
+        <div>
+        <label>Primer cognom</label><input type="text"></div>
+    <div><label>Segon cognom</label><input type="text"></div>
+        <div><button>Envia</button><input type="reset"></div>
+    </form>
+</body>
+</html>

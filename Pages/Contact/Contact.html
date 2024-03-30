@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="./Assets-contact/css/styles.css">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="./Assets-contact/MyFavicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./Assets-contact/MyFavicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./Assets-contact/MyFavicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./Assets-contact/MyFavicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./Assets-contact/MyFavicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./Assets-contact/MyFavicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./Assets-contact/MyFavicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./Assets-contact/MyFavicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./Assets-contact/MyFavicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./Assets-contact/MyFavicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./Assets-contact/MyFavicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./Assets-contact/MyFavicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./Assets-contact/MyFavicon/favicon-16x16.png">
+    <link rel="manifest" href="./Assets-contact/MyFavicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+
+    <header class="header">
+        <a href="http://www.adamelanzi.cat/"><img src="./Assets-contact/logo/A (3).gif" alt="logo pàgina web" height="100" width="200"></a>
+        <a href="http://www.adamelanzi.cat/" class="a"><b>HOME</b></a>
+        <a href="../About/About.html" class="a"><b>ABOUT</b></a>
+        <a href="../Blog/Blog.html" class="a"><b>BLOG</b></a>
+        <a href="../Portfolio/Portfolio.html" class="a"><b>PORTFOLIO</b></a>
+        <a href="../Courses/Courses.html" class="a"><b>COURSES</b></a>
+        <a href="../Gallery/Gallery.html" class="a"><b>GALLERY</b></a>
+        <a href="../Contact/Contact.html" class="a"><b>CONTACT</b></a>
+    </header>
+
+    <form action="enviar.php" method="get">
+
+        <fieldset>
+            <legend class="titols_contact"><h2><b>FORMULARI DE CONTACTE</b></h2></legend>
+
+        <label class="titols_contact" for="name">Nom</label>
+        
+        <div>
+            <input type="text" id="name" name="name" size="25" required> 
+        </div>
+        
+        <div>
+        <label class="titols_contact" for="surname">Cognom</label>
+        </div>
+        
+        <div>
+            <input type="text" id="surname" name="surname" size="25" required>
+        </div>
+
+
+<div>
+<h3 class="titols_contact"><u>Correu electrònic</u></h3>
+<label for="email">
+    <input type="email" name="email" id="email" placeholder="tuemail@gmail.com" pattern="[a-zA-Z0-9!#$%&'*\/=?^_`\{\|\}~\+\-]([\.]?[a-zA-Z0-9!#$%&'*\/=?^_`\{\|\}~\+\-])+@[a-zA-Z0-9]([^@&%$\/\(\)=?¿!\.,:;]|\d)+[a-zA-Z0-9][\.][a-zA-Z]{2,4}([\.][a-zA-Z]{2})?" required>
+</label>
+</div>
+
+<div>
+<h3 class="titols_contact"><u>Telèfon</u></h3>
+<label for="tel"> 
+    <input type="tel" id="tel" name="tel" maxlength="9" pattern="[0-9]{9}">
+</label>
+</div>
+
+<div>
+<h3 class="titols_contact"><u>Missatge</u></h3>
+<label for="">
+    <textarea name="altres" id="altres" cols="160" rows="10" required></textarea>
+</label>
+</div>
+
+<div>
+    <input type="submit" value="Enviar">
+</div>
+
+
+</fieldset>
+    
+</form>
+
+<footer class="footer">
+    <ul type="none">
+        <li>
+            <a class="contact_with_me" href="https://www.instagram.com/adam.elanzi/?next=%2F" target="_blank"><img src="./Assets-contact/images/Disseny_sense_títol-removebg-preview.png" alt="logo instagram" height="30" width="30"></a>
+            
+            <a class="contact_with_me" href="https://twitter.com/Adam_elanzi" target="_blank"><img src="./Assets-contact/images/Disseny_sense_títol__1_-removebg-preview.png" alt="logo twitter" height="30" width="30"></a>
+            
+            <a class="contact_with_me" href="https://discord.com/channels/@me" target="_blank"><img src="./Assets-contact/images/Disseny_sense_títol__2_-removebg-preview.png" alt="logo discord" height="32" width="32"></a>
+            
+            <a class="contact_with_me" href="mailto:adamanzi007@gmail.com" target="_blank"><img src="./Assets-contact/images/Disseny_sense_títol__4_-removebg-preview.png" alt="logo gmail" width="25" height="25"></a>
+        </li>
+    </ul>
+</footer>
+
+
+
+
+
+</body>
+</html>

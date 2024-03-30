@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercici acabat</title>
+</head>
+<body>
+
+    <h1 style="color: blue;">DADES EQUIP</h1>
+
+    <form action="enviar.php" method="get">
+        <fieldset>
+            <legend style="color: blue;">Dades personals</legend>
+            <label for="name" style="color: blue;">Nom</label>
+            
+            <div>
+                <input type="text" id="name" name="name" size="25" required> 
+            </div>
+            
+            <div>
+            <label for="surname" style="color: blue;">Cognom</label>
+            </div>
+            
+            <div>
+                <input type="text" id="surname" name="surname" size="25" required>
+            </div>
+            
+            <div>
+                <label for="address" style="color: blue;">Adreça</label>
+            </div>
+
+            <div>
+                <input type="text" id="address" name="adress" size="25" required>
+            </div>
+        </fieldset>
+
+<div>
+        <h3 style="color: blue;"><u>Gènere</u></h3>
+        <label for="male">Masculí</label>
+        <input type="radio" name="gender" value="male" checked>
+        <label>Femení</label>
+        <input type="radio" name="gender" value="female">        
+        <label>No binari</label>
+        <input type="radio" name="gender" value="no_binary">
+
+        <h3 style="color: blue;"><u>Estat civil</u></h3>
+        <label for="solter">Solter</label>
+        <input type="radio" name="estat_civil" value="solter" checked>
+        <label>Casat</label>
+        <input type="radio" name="estat_civil" value="casat">        
+</div>
+
+<div>
+    <h3 style="color: blue;"><u>Data de naixement</u></h3>
+        <input type="date" required>
+</div>
+
+<div>
+    <h3 style="color: blue;"><u>Correu electrònic</u></h3>
+    <label for="email">
+        <input type="email" name="email" id="email" placeholder="tuemail@gmail.com" pattern="[a-zA-Z0-9!#$%&'*\/=?^_`\{\|\}~\+\-]([\.]?[a-zA-Z0-9!#$%&'*\/=?^_`\{\|\}~\+\-])+@[a-zA-Z0-9]([^@&%$\/\(\)=?¿!\.,:;]|\d)+[a-zA-Z0-9][\.][a-zA-Z]{2,4}([\.][a-zA-Z]{2})?" required>
+    </label>
+</div>
+
+<div>
+    <h3 style="color: blue;"><u>Telèfon</u></h3>
+    <label for="tel"> 
+        <input type="tel" id="tel" name="tel" maxlength="9" pattern="[0-9]{9}" required>
+    </label>
+</div>
+
+<div>
+    <h3 style="color: blue;"><u>Xarxes socials</u></h3>
+    
+    <h4 style="color: blue;">Instagram</h4>  
+    <label for="instagram">
+        <input type="text" name="instagram" id="instagram" pattern="^@.+[a-zA-Z0-9._-]" placeholder="@juanito" required>
+    </label>
+
+    <h4 style="color: blue;">Twitter</h4>
+    <label for="twitter">
+        <input type="text" name="twitter" id="twitter" pattern="^@.+[a-zA-Z0-9._-]" placeholder="@juanito" required>
+    </label>
+</div>
+
+<div>
+    <h3 style="color: blue;"><u>Preferències de posicions</u></h3>
+    <select name="position" multiple>
+        <optgroup label="Porter">
+            <option value="porter">Porter</option>
+        </optgroup>
+    
+        <optgroup label="Defensa">
+            <option value="lateral_esquerra">Lateral esquerra</option>
+            <option value="defensa_central">Defensa central</option>
+            <option value="lateral_dret">Lateral dret</option>
+        </optgroup>
+    
+        <optgroup label="Migcampista">
+            <option value="migcampista_defensiu">Migcampista defensiu</option>
+            <option value="migcampista">Migcampista</option>
+            <option value="migcampista_ofensiu">Migcampista ofensiu</option>
+            <option value="migcampista_dret">Migcampista dret</option>
+            <option value="migcampista_esquerra">Migcampista esquerra</option>
+        </optgroup>
+
+        <optgroup label="Davanter">
+            <option value="extrem_esquerra">Extrem esquerra</option>
+            <option value="extrem_dret">Extrem dret</option>
+            <option value="fals_9">Fals 9</option>
+            <option value="davanter_punta">Davanter punta</option>
+        </optgroup>
+
+        <optgroup label="Banqueta">
+            <option value="banqueta_dreta">Banqueta dreta</option>
+            <option value="extrem_esquerra">Banqueta esquerra</option>
+            <option value="banqueta_centre">Banqueta centre</option>
+        </optgroup>
+
+    </select>
+</div>
+
+<div>
+    <h3 style="color: blue;"><u>Carnet</u></h3>
+        <input type="file" name="photo" id="photo">
+</div>
+
+<div>
+    <h3 style="color: blue;"><u>Color armariet</u></h3>
+        <input type="color" name="color">
+</div>
+
+<div>
+    <h3 style="color: blue;"><u>Setmana per fer el viatge de final de temporada</u></h3>
+        <input type="week">
+</div> <br>
+
+<div>
+        <input type="submit" value="Enviar">
+</div>
+    </form>
+
+</body>
+</html>

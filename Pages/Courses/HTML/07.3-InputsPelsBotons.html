@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs pels botons</title>
+    <style>
+        code{
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+    input type:
+        <input type="button"> -> Visualment és igual, però el formulari no s'enviarà 
+        <input type="submit"> -> S'utilitza per enviar el formulari 
+        <input type="date"> -> S'utilitza per introduir una data 
+        datetime -> Obsolet 
+        <input type="datetime-local"> -> data i hora, no funciona a Firefox 
+        <input type="time"> -> S'utilitza per introduir una hora 
+            SUGGERIMENT 
+            - Es recomana utilitzar date i time per seleccionar data i hora 
+        <input type="hidden"> -> Camp ocult, pot contenir un valor però no es mostrarà 
+        <input type="month"> -> S'utilitza per introduir un mes 
+        <input type="week"> -> S'utilitza per introduir el número de setmana de l'any 
+        <input type="search"> -> S'utilitza per les barres de cerca 
+        <input type="tel"> -> S'utilitza per introduir números de telèfon 
+        <input type="email"> -> S'utilitza per introduir un correu electrònic 
+        <input type="password"> -> S'utilitza per contrasenyes 
+        <input type="url"> -> S'utilitza per introduir URL 
+        <input type="color"> -> S'utilitza per especificar un color 
+        <input type="number"> -> S'utilitza per valors numèrics 
+        <input type="range"> -> S'utilitza per establir un rang 
+        <input type="reset"> -> S'utilitza per reiniciar el formulari 
+        <input type="text"> -> Valor per defecte
+
+        però n'existeixen més
+        <input type="checkbox">
+        <input type="file">
+        <input type="image">
+        <input type="radio">
+ -->
+
+ <p><a href="07-Formularis.html">Formularis</a></p>
+ <p><a href="index.html">Index</a></p>
+
+    <h1>INPUTS PELS BOTONS</h1>
+
+    <p>L'element HTML input pot portar l'atribut type i aquest pot tenir 22 valors diferents. Ara, analitzarem el primer tipus de valor, el &lt;input type="button"&gt;.</p>
+    <p>
+
+    <h2>&lt;input type="button"&gt; vs &lt;button&gt;</h2>
+
+    <p>Existeixen dues maneres de construir botons dins d'un element HTML form: (1) fent servir un &lt;input type="button"&gt; i (2) utilitzant l'element HTML button que es crea amb &lt;button&gt;&lt;/button&gt;.
+    </p>
+
+    <h3>Dos botons sense text</h3>
+
+    <p>Aquí sota teniu el codi per crear dos botons sense text: (1) un input de tipus button i (2) un button. A sota el codi, teniu el resultat en el fitxer html.</p>
+    
+    <pre>
+        <code>
+            &lt;form&gt;
+                &lt;input type="button"&gt;
+                &lt;button&gt;&lt;/button&gt;
+            &lt;/form&gt;
+        </code>
+    </pre>
+    
+    <form>
+        <!-- Input de tipus button sense nom que s'assemblen però no fan el mateix -->
+        <input type="button">
+        <button></button>
+    </form>
+
+    <h3>Dos botons amb el mateix text</h3>
+
+    <p>Posem text als dos botons. Fem servir l'atribut value i el valor "Enviar" per posar el text "Enviar" al input de tipus button. En l'element HTML button posem "Enviar" entre les dues etiquetes button. Aquí sota teniu el codi i el seu resultat.</p>
+    
+    <pre>
+        <code>
+            &lt;form&gt;
+                &lt;input type="button" value="Enviar"&gt;
+                &lt;button&gt;Enviar&lt;/button&gt;
+            &lt;/form&gt;
+        </code>
+    </pre>
+
+    <form>
+        <!-- Posem el mateix nom als dos botons-->
+        <input type="button" value="Enviar">
+        <button>Enviar</button>
+    </form>
+
+    <h3>Un input de tipus text i dos botons amb el mateix text però amb funció diferent</h3>
+
+    <p>Posem un element HTML input amb atribut type i valor "text" per posar text. Si envieu el text fent servir el primer botó construit amb &lt;input type="button" value="Enviar"&gt; la pagina web no recarrega i si ho feu amb l'element HTML button, sí que ho fa. Pera tant, el primer element HTML no envia el formulari i el segon element sí. Aquí sota teniu el codi i el seu resultat.</p>
+    
+    <pre>
+        <code>
+            &lt;form&gt;
+                &lt;input type="text"&gt;
+                &lt;input type="button" value="Enviar"&gt;
+                &lt;button&gt;Enviar&lt;/button&gt;
+            &lt;/form&gt;
+        </code>
+    </pre>
+    
+    <form>
+        <!-- El primer no envia el formulari i el segon sí-->
+        <input type="text">
+        <input type="button" value="Enviar">
+        <button>Enviar</button>
+    </form>
+
+    <h3>Un input i dos botons amb diferent text i mateixa funció</h3>
+    
+    <p>Si posem un atribut type amb valor "submit" a &lt;input&gt; fa exactement la mateixa funció que l'element HTML button. Per convenció, se sol utilitzar el segon cas. Aquí sota teniu el codi i el seu resultat.</p>
+    
+    <pre>
+        <code>
+            &lt;form&gt;
+                &lt;input type="text"&gt;
+                &lt;input type="submit" value="Enviar input amb submit"&gt;
+                &lt;button&gt;Enviar amb button&lt;/button&gt;
+            &lt;/form&gt;
+        </code>
+    </pre>
+    
+    <form>
+        <!-- El primer i el segon envien el formulari-->
+        <input type="text">
+        <input type="submit" value="Enviar input amb submit">
+        <button>Enviar amb button</button>
+    </form>
+
+    
+</body>
+</html>

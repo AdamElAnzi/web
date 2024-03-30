@@ -1,0 +1,36 @@
+.header {
+    background-color: black;
+    margin-bottom: 50px;
+    display: flex;
+    font-size: x-large;
+    justify-content: space-around;
+}
+
+.body {
+    margin: 0px;
+}
+
+.a {
+    text-decoration: none;
+    font-size: x-large;
+    color: #0D959B;
+}
+
+.h1 {
+    color: #0D959B;
+}
+
+.footer {
+    background-color: #096E72;
+    margin-top: 150px;
+    display: flex;
+    font-size: x-large;
+    justify-content: space-around;
+}
+
+.h3 {
+    color: #0D959B;
+}
+
+
+

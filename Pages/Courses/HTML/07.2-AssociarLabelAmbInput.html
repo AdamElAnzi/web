@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Associar label a input</title>
+    <style>
+        code{
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    
+    <p><a href="07-Formularis.html">Formularis</a></p>
+    <p><a href="index.html">Index</a></p>
+    
+    <h1>Associar label a input</h1>
+    <h2>ASSOCIACIÓ MÉS COMUNA D'UN LABEL AMB UN INPUT</h2>
+    <p>En l'apartat anterior hem vist que l'etiqueta &lt;label&gt; té un atribut for. En el valor de l'atribut for és on posem el valor de atribut id de l'etiqueta &lt;input&gt; que volem connectar. En aquest cas, solem posar el valor "name" a l'atribut id de &lt;input&gt; i, per tant, també posem el valor "name" a l'atribut for de &lt;label&gt;. 
+    </p>
+
+    <pre>
+        <code>
+            &lt;form&gt;
+                &lt;label for="name"&gt;Nom&lt;/label&gt;
+                &lt;input id="name"&gt;
+                &lt;button&gt;Enviar formulari&lt;/button&gt;
+            &lt;/form&gt;
+        </code>
+    </pre>
+
+    <p>Si anem a la pàgina html podem posar el nostre nom en el input com abans, però si fem un clic sobre la paraula Nom del element HTML label s'activa el cursor en el camp input amb el qual està connectat.</p>
+
+    <form action="">
+        <label for="name">Nom</label>
+        <input id="name">
+        <button>Enviar formulari</button>
+    </form>
+    
+    <h2>ASSOCIACIÓ MENYS COMUNA D'UN LABEL AMB UN INPUT</h2>
+    <p>Hi ha una altra forma d'associar un element label amb un element input. Aquesta forma la veureu poques vegades però s'ha de conèixer.</p>
+
+    <pre>
+        <code>
+            &lt;form action=""&gt;
+                &lt;label&gt;
+                    Nom
+                    &lt;input&gt;
+                &lt;/label&gt;
+                &lt;button&gt;Enviar formulari&lt;/button&gt;
+            &lt;/form&gt;
+        </code>
+    </pre>
+
+    <p>Si escrivim el codi d'aquesta alternativa per connectar un label amb un input, el resultat visual és exactement el mateix i si cliquem sobre Nom també s'activa el cursor en el camp input. Aquesta alternativa s'utilitza menys perquè si volem donar estils diferents al label i al input no podem fer-ho. Aquesta alternativa és completament vàlida i l'especificació HTML5 diu que es pot fer d'aquesta manera.</p>
+
+    <form>
+        <label>
+            Nom
+            <input>
+        </label>
+        <button>Enviar formulari</button>
+    </form>
+    
+</body>
+</html>

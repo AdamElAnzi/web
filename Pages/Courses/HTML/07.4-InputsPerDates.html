@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs per les dates&gt;</title>
+    <style>
+        code{
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+    input type:
+        <input type="button"> -> Visualment és igual, però el formulari no s'enviarà 
+        <input type="submit"> -> S'utilitza per enviar el formulari 
+        <input type="date"> -> S'utilitza per introduir una data 
+        datetime -> Obsolet 
+        <input type="datetime-local"> -> data i hora, no funciona a Firefox 
+        <input type="time"> -> S'utilitza per introduir una hora 
+            SUGGERIMENT 
+            - Es recomana utilitzar date i time per seleccionar data i hora 
+        <input type="hidden"> -> Camp ocult, pot contenir un valor però no es mostrarà 
+        <input type="month"> -> S'utilitza per introduir un mes 
+        <input type="week"> -> S'utilitza per introduir el número de setmana de l'any 
+        <input type="search"> -> S'utilitza per les barres de cerca 
+        <input type="tel"> -> S'utilitza per introduir números de telèfon 
+        <input type="email"> -> S'utilitza per introduir un correu electrònic 
+        <input type="password"> -> S'utilitza per contrasenyes 
+        <input type="url"> -> S'utilitza per introduir URL 
+        <input type="color"> -> S'utilitza per especificar un color 
+        <input type="number"> -> S'utilitza per valors numèrics 
+        <input type="range"> -> S'utilitza per establir un rang 
+        <input type="reset"> -> S'utilitza per reiniciar el formulari 
+        <input type="text"> -> Valor per defecte
+
+        però n'existeixen més
+        <input type="checkbox">
+        <input type="file">
+        <input type="image">
+        <input type="radio">
+ -->
+
+ <p><a href="07-Formularis.html">Formularis</a></p>
+ <p><a href="index.html">Index</a></p>
+
+    <h1>INPUTS PER LES DATES</h1>
+    <p>Els inputs per posar dates són diversos i s'han de controlar. Alguns no funcionen en alguns navegadors i s'han de conèixer.</p>
+
+    <h2>EXEMPLES D'INPUTS PER LES DATES</h2>
+
+    <h3>Un input de tipus date</h3>
+
+    <p>És un camp que ens deixa introduir un dia, un mes i any. Funciona bé en tots els navegadors. A sota el codi, teniu el resultat en el fitxer html.</p>
+    
+    <pre>
+        <code>
+            &lt;form&gt;
+                &lt;input type="date"&gt;
+            &lt;/form&gt;
+        </code>
+    </pre>
+
+    <form>
+        <!-- Input de tipus button que s'assemblen però no fan el mateix -->
+        <input type="date">
+    </form>
+
+    <h3>Un input de tipus datetime</h3>
+
+    <p>Està obsolet. Es comporta com un camp de tipus text. No s'ha d'utilitzar.</p>
+    
+    <pre>
+        <code>
+            &lt;form&gt;
+                &lt;input type="datetime"&gt;
+            &lt;/form&gt;
+        </code>
+    </pre>
+
+    <form>
+        <input type="datetime">
+    </form>
+
+    <h3>Un input de tipus datetime-local</h3>
+    <p>És un camp que permet entrar un dia, un mes, any i l'hora. No funciona en Mozilla Firefox.</p>
+    
+    <pre>
+        <code>
+            &lt;form&gt;
+                &lt;input type="datetime-local"&gt;
+            &lt;/form&gt;
+        </code>
+    </pre>
+
+    <form>
+        <input type="datetime-local">
+    </form>
+
+    <h3>Un input de tipus time</h3>
+    <p>És un camp que permet entrar la hora. Funciona en tots els navegadors.</p>
+    
+    <pre>
+        <code>
+            &lt;form&gt;
+                &lt;input type="time"&gt;
+            &lt;/form&gt;
+        </code>
+    </pre>
+
+    <form>
+        <input type="time">
+    </form>
+
+    <h3>Un input de tipus time</h3>
+    <p>Si voleu demanar dia i hora en un formulari i que funcioni en tots els navegadors, haurieu de posar un input de tipus date i un input de tipus time</p>
+    
+    <pre>
+        <code>
+            &lt;form&gt;
+                &lt;input type="date"&gt;
+                &lt;input type="time"&gt;
+            &lt;/form&gt;
+        </code>
+    </pre>
+    
+    <form>
+        <!-- Si voleu demanar data i hora i que funcioni en tots els navegadors-->
+        <input type="date">
+        <input type="time">
+    </form>
+
+    <h3>Un input de tipus month</h3>
+    <p>Si voleu demanar un mes en concret. També heu d'introduir l'any.</p>
+    
+    <pre>
+        <code>
+            &lt;form&gt;
+                &lt;input type="month"&gt;
+            &lt;/form&gt;
+        </code>
+    </pre>
+
+    <form>
+        <input type="month">
+    </form>
+    
+</body>
+</html>

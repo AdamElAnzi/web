@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Device Pixel Ratio</title>
+</head>
+<body>
+    <a href="index.html">Index</a>
+
+    <h1>Device pixel ratio</h1>
+    <p>Serveix per variar la mida d'un pixel físic depenent del dispositiu en el qual estiguis mirant aquella imatge</p>
+
+    <img src="Assets/Imatges/Screenshot 2023-12-15 09.52.00.png">
+    <p>El DPR del meu ordinador, com podem veure a baix, és de 1.00</p>
+
+    <img src="">
+    <p>Si mirem el DPR amb el mòbil, ens surt que aquest és de 2.00</p>
+
+    <img src="">
+    <p>Si fem zoom i mirem la pantalla amb 150%, ens surt que el DPR és de 1.50</p>
+
+    <h2>Viewport</h2>
+    <p>El viewport és una etiqueta que indica el tamany de la pestanya o àrea visible d'una pantalla.</p>
+    
+    <img src="Assets/Imatges/Screenshot 2023-12-15 09.51.53.png">
+    <p>En aquesta imatge, podem observar que estem veient la "imatge" en 683px x 684px</p>
+    
+    
+    <p>En canvi, en la "imatge" que posarem a continuació, es veu en 1366px x 692px</p>
+    
+    <img src="Assets/Imatges/Screenshot 2023-12-15 09.52.00.png">
+    <p>Si variem la talla, hi ha menys o més pixels, el mateix passa si es fa zoom en una imatge, en aquesta podrem veure més pixels, però menys definició</p>
+
+    <p>El viewport és l'àrea visible d'una pàgina web en una pantalla. Pot variar segons el dispositiu i l'amplada del navegador. És com una finestra que mostra només una part de la pàgina.
+
+        D'altra banda, el device pixel ratio (DPR) és una relació entre el nombre de píxels físics d'un dispositiu i el nombre de píxels lògics o virtuals utilitzats per representar el contingut a la pantalla. Amb valors més alts de DPR, la pantalla té més píxels per mostrar contingut de manera més nítida.
+        
+        Per exemple, imaginem una pàgina web amb un viewport de 800 píxels d'amplada i un DPR de 2. En una pantalla de mòbil amb una amplada real de 320 píxels i un zoom del 100%, la pàgina s'adaptarà reduint-se per ajustar-se al viewport. Això significa que haurà menys detall i lletres més petites.
+        
+        En contrast, en una pantalla d'ordinador amb una amplada real de 1920 píxels i un zoom del 100%, tota la pàgina serà visible al viewport sense necessitat d'adaptacions. El contingut tindrà més detall i els textos es veuran més grans.
+        
+        Si apliquem un zoom del 200% a ambdós dispositius, la pàgina de mòbil es mostraria amb més detall ja que els píxels virtuals augmentarien. En canvi, a l'ordinador, com que té més àrea visible, el zoom no seria necessari per veure tot el contingut i, per tant, el DPR no canviaria.
+    </p>
+
+</body>
+</html>

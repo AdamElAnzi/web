@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviament Get vs Post</title>
+</head>
+<body>
+    <p><a href="index.html">Index</a></p>
+    <p><a href="07-Formularis.html">Formularis</a></p>    
+
+    <h2>ENVIAMENT GET VS POST</h2>
+    <h3>METODE GET</h3>
+    <p>Es el mètode d'entrada de pàgines web quan nosaltres hi entrem a traves de URL. Poseu l'atribut action amb el valor "enviar.html" i l'atribut method amb el valor get.</p>
+
+    <h4>Sense atribut name</h4>
+    <p>Quan no existeix el fitxer del action, ens retorna un error: Cannot get+Nom del fitxer</p>
+    <p>Malgrat posem el nom i el cognom als camps, res s'envia, perque en la url, després del signe d'interrogació no hi ha cap informació</p>
+
+    <form action="enviar.html" method="get">
+        <label for="name">Nom</label>
+        <input type="text" id="name">    
+        <label for="surname">Cognom</label>
+        <input type="text" id="surname">
+        <input type="submit">
+    </form>
+    
+    <h4>Amb atribut name</h4>
+    <p>Amb els atributs name emplenats podem veure que a la url apareixen els camps que hem posat</p>
+
+    <form action="enviar.html" method="get">
+        <label for="name">Nom</label>
+        <input type="text" id="name" name="name">    
+        <label for="surname">Cognom</label>
+        <input type="text" id="surname" name="surname">
+        <input type="submit">
+    </form>
+
+    <h2>METODE POST</h2>
+    <p>Es un enviament del formulari per la porta del darrera. L'error 405 que surt significa que ha intentat enviar les dades pero aquestes dades no han arribat al destí.</p>
+    <p>Per veure si hem enviat alguna cosa, hem d'inspeccionar, anar a network, donarli a envia.html que surt en vermell a sota i finalment donar-li a Payload</p>
+    
+    <form action="enviar.html" method="post">
+        <label for="name">Nom</label>
+        <input type="text" id="name" name="name">    
+        <label for="surname">Cognom</label>
+        <input type="text" id="surname" name="surname">
+        <input type="submit">
+    </form>
+
+</body>
+</html>

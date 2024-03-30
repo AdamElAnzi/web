@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercici fet a classe</title>
+</head>
+<body>
+
+    <h1 style="color: blue;">DADES EQUIP</h1>
+
+    <form>
+        <fieldset>
+            <legend style="color: blue;">Dades personals</legend>
+            <label for="name">Nom</label>
+            <input type="text" id="name" name="name"> 
+            <div>
+                <label for="surname">Cognom</label>
+                <input type="text" id="surname" name="surname">
+            </div>
+            <div>
+                <label for="adress">Adreça</label>
+                <input type="text" id="adress" name="adress">
+            </div>
+        </fieldset>
+    </form> 
+
+<div>
+    <form> 
+        <h3 style="color: blue;"><b>Gènere</b></h3>
+        <label for="male">Masculí</label>
+        <input type="radio" name="gender" value="male" autofocus>
+        <label>Femení</label>
+        <input type="radio" name="gender" value="female">        
+        <label>No binari</label>
+        <input type="radio" name="gender" value="no_binary">
+    </form>
+    <form>
+        <h3 style="color: blue;"><b>Estat civil</b></h3>
+        <label for="solter">Solter</label>
+        <input type="radio" name="estat_civil" value="solter" autofocus>
+        <label>Casat</label>
+        <input type="radio" name="estat_civil" value="casat">        
+    </form>
+</div>
+
+<div>
+    <h3 style="color: blue;"><b>Data de naixement</h3>
+        <form>
+            <input type="date">
+        </form>
+</div>
+
+<div>
+    <h3 style="color: blue;">Correu electrònic</h3>
+    <label for="email">
+        <input type="email" name="email" id="email" placeholder="tuemail@gmail.com" required>
+    </label>
+</div>
+
+<div>
+    <h3 style="color: blue;">Telèfon</h3>
+    <label for="tel"> 
+        <input type="tel" id="tel" name="tel" value="+34" maxlength="12" required>
+    </label>
+</div>
+
+<div>
+    <h3 style="color: blue;">Xarxes socials</h3>
+    <label for="xarxes_socials">
+        <input type="text" name="xarxes_socials" id="xarxes_socials" pattern="@" placeholder="@juanito">
+    </label>
+</div>
+
+</body>
+</html>

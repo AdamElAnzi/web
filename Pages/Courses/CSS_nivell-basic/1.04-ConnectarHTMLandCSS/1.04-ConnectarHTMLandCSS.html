@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Connectar HTML i CSS</title>
+    <style>
+        body{
+            background-color: red;
+        }
+    </style>
+
+    <style>
+        @import url(css/styles.css);
+    </style>
+</head>
+<body>
+
+    <h2>Hi ha 4 maneres de unir CSS amb HTML</h2>
+
+    <ul>
+        <li>Carpeta CSS amb un arxiu que es digui styles.css</li>
+        <p>Aquesta és la manera que més utilitzarem.</p>
+        <li>Posar en el head la etiqueta style i a dins posar body{} i entre {} posar background-color: +el color que es vulgui posar</li>
+        <li style="background-color: blue;">Ficar un h2 per exemple el següent: style:"background-color: red"> Utilitzar l'etiqueta style en una etiqueta HTML</li>
+        <li>Utilitzar la regla @import, s'ha de posar:  @import url(css/styles.css); entre styles al head.No s'ha de fer a no ser que tinguem diferents codis css i els volguem importar tots en un de sol. És una mala praxis i per tant no ho farem</li>
+    </ul>
+
+
+
+
+</body>
+</html>

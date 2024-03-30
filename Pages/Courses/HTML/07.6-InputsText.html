@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs Text</title>
+</head>
+<body>
+    <p><a href="index.html">Index</a></p>
+    <p><a href="07-Formularis.html">Formularis</a></p>
+    <h2>Inputs amb text</h2>
+    <h3>És el input que surt per defecte en cas de que no poguem cap type</h3>
+    <h3>Atributs habituals</h3>
+    <p>Es fan servir els seguents atributs:</p>
+    <h4>Name</h4>
+    <p>S'ha de posar aquest atribut perque el servidor sapiga que es el que poses</p>
+    <label for="username">Username:</label>
+    <form><input type="text" id="username" name="username" maxlength="10"><br><br></form>
+    <form><input type="submit" value="submit"></form>
+    
+    <h4>Maxlength</h4>
+    <p>Limitar el numero de caracters que un usuari pot posar</p>
+    <form><input type="text" maxlength="8">
+        <h4>Size</h4></form>
+    <p>Per determinar la mida de la caixa</p>
+    <form><input type="text" maxlength="5" size="5"></form>
+    
+    <h4>Value</h4>
+    <p>S'utilitza per posar un valor determinat per recordar a una persona que en aquell lloc va un numero concret.</p>
+    <input type="text" value="+34">
+    
+    <h4>Placeholder</h4>
+    <p>Una pista per al usuari sobre el que pot introduir a la caixa</p>
+    <form><input type="text" placeholder="Posa l'any amb 4 xifres"></form>
+    <form><div><button>Enviar</button></div></form>
+    
+    <h4>Pattern</h4>
+    <p>També s'abrevia com a rejects, impedeix posar qualsevol text que no hem posat a l'expressio regular</p>
+    <form><input type="text" pattern="^[1-9][0-9]{3}$" size="30"></form>
+    <form><button>Enviar</button></form>
+
+    <h4>Required</h4>
+    <p>Fa que la casella s'hagi d'omplir obligatoriament, fa que surti * de color vermell</p>
+    <form><input type="text" required></form>
+</body>
+</html>

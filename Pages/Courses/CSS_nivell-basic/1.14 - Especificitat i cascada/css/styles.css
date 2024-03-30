@@ -1,0 +1,59 @@
+/* Els comentaris en CSS es posen amb CTRL+} */
+
+/* ¿COM FUNCIONA CSS?
+Especificitat -> Estableix com de específic és un selector per saber quin estil aplicar.
+El càlcul es realitza amb la següent fórmula:
+Etiquetes i pseudo-elements 001
+Classes, atributs i pseudo-classes 010
+Ids 100
+Estils en línia 1000
+!important GUANYA A TOT I NO S'USA MAI
+
+Cascada -> Funciona sempre que l'especificitat sobre l'element sigui la mateixa
+
+Herència -> És la capacitat que tenen alguns elements de heretar algunes propietats dels seus elements contenedors (pares, avis, etc)
+*/
+
+
+h1 {
+  background-color:red;
+}
+
+.title {
+  background-color: blue;
+}
+
+#title {
+  background-color: green;
+}
+
+h1.title {
+  background-color: yellow;
+}
+
+h1#title {
+  background-color: teal;
+}
+
+h1.title#title {
+  background-color: coral;
+}
+
+/*
+.title {
+  background-color: red;
+}
+
+h1.title {
+  background-color: red;
+}
+
+h1.title {
+  background-color: red !important;
+}
+
+h1.title {
+  background-color: blue !important;
+}
+
+*/

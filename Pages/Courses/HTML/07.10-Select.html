@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select</title>
+</head>
+<body>
+    <p><a href="index.html">Anar a l'index</a></p>
+    <p><a href="07-Formularis.html">Anar a formularis</a></p>
+
+    <h3>Element select bàsic</h3>
+    <p>Etiqueta que serveix per seleccionar entre una llista d'opcions d'un o més items</p>
+
+    <form>
+        <select>
+        </select>
+    </form>
+
+    <h3>Etiqueta options</h3>
+    <p>Cada etiqueta option afegeix un item per poder triar en el menu desplegable. El select porta l'atribut name i les etiquetes option els atributs value</p>
+
+    <form>
+        <label for="language">Tria els llenguatges web que controlis</label>
+        <select name="llenguatges" id="languages">
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="JAVASCRIPT">JAVASCRIPT</option>
+        </select>
+    </form>
+
+    <h4>Atribut multiple</h4>
+    <p>Es posa dins l'etiqueta select, ens permet triar més d'una opció clicant la tecla Control.</p>
+
+    <form>
+        <label for="language">Tria els llenguatges web que controlis</label>
+        <select name="llenguatges" id="languages" multiple>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">JAVASCRIPT</option>
+        </select>
+    </form>
+
+<h3>Element select avançat</h3>
+<p>Podem ordenar els elements que farem escollir a l'usuari</p>
+
+<select name="pets">
+    <optgroup label="Ocells">
+    <option value="pardal">Pardal</option>
+    <option value="cadernera">Cadernera</option>
+    </optgroup>
+
+    <optgroup label="Rèptils">
+        <option value="cocodril">Cocodril</option>
+        <option value="serp">Serp</option>
+        <option value="tortuga">Tortuga</option>
+        <option value="iguana">Iguana</option>
+    </optgroup>
+
+    <optgroup label="Mamífers">
+        <option value="bufal">Búfal</option>
+        <option value="lleo">Lleó</option>
+        <option value="guineu">Guineu</option>
+        <option value="rinoceront">Rinoceront</option>
+    </optgroup>
+</select>
+
+<h4>Element select avançat amb etiqueta multiple</h4>
+
+<select name="pets" multiple>
+    <optgroup label="Ocells">
+    <option value="pardal">Pardal</option>
+    <option value="cadernera">Cadernera</option>
+    </optgroup>
+
+    <optgroup label="Rèptils">
+        <option value="cocodril">Cocodril</option>
+        <option value="serp">Serp</option>
+        <option value="tortuga">Tortuga</option>
+        <option value="iguana">Iguana</option>
+    </optgroup>
+
+    <optgroup label="Mamífers">
+        <option value="bufal">Búfal</option>
+        <option value="lleo">Lleó</option>
+        <option value="guineu">Guineu</option>
+        <option value="rinoceront">Rinoceront</option>
+    </optgroup>
+</select>
+
+</body>
+</html>

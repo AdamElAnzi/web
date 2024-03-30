@@ -1,0 +1,45 @@
+.button {
+    background-color: royalblue;
+    height: 20px;
+    width: 200px;
+    border-radius: 10px;
+    padding: 0.1em 1.2em;
+}
+
+.button--blue,
+.button--red,
+.button--orange {
+    color: white;
+    border: none;
+}
+
+.button--blue {
+    background-color: royalblue;
+}
+
+.button--red {
+    background-color: firebrick;
+}
+
+.button--orange {
+    background-color: orange;
+}
+
+.button--ghost-blue,
+.button--ghost-red,
+.button--ghost-orange {
+    background-color: transparent;
+    border: 1px solid currentColor;
+}
+
+.button--ghost-blue {
+    color: royalblue;
+}
+
+.button--ghost-red {
+    color: firebrick;
+}
+
+.button--ghost-orange {
+    color: orange;
+}

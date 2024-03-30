@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs radio</title>
+</head>
+<body>
+    <p><a href="index.html">Index</a></p>
+    <p><a href="07-Formularis.html">Formularis</a></p>
+
+    <h3>Input de tipus radio</h3>
+    <p>Ens permet construir caselles de selecció multiple</p>
+
+    <form>
+        <label>Masculí
+            <input type="radio">
+        </label>
+
+        <label>Femení
+            <input type="radio">
+        </label>
+
+        <label>No binari
+            <input type="radio">
+        </label>
+
+        <button>Envia</button>
+    </form>
+
+    <h3>Atribut name</h3>
+    <p>Amb el mateix name fa que només poguem seleccionar 1 opció a la vegada</p>
+    
+    <form>
+        <label>Masculí</label>
+        <input type="radio" name="gender">
+        <label>Femení</label>
+        <input type="radio" name="gender">        
+        <label>No binari</label>
+        <input type="radio" name="gender">
+        <button>Envia</button>
+    </form>
+
+    <h3>Atribut value</h3>
+    <p>Si es clica alla, el servidor rep que allo és "x"</p>
+    
+    <form>
+        <label>Masculí</label>
+        <input type="radio" name="gender" value="male">
+        <label>Femení</label>
+        <input type="radio" name="gender" value="female">        
+        <label>No binari</label>
+        <input type="radio" name="gender" value="no_binary">
+        <button>Envia</button>
+    </form>
+
+    <h3>Atributs accesoris booleans</h3>
+    <p>Hi ha 4 tipus</p>
+    <p>Checked</p>
+    <p>Disabled</p>
+    <p>Autofocus</p>
+    <p>Required</p>
+
+    <h4>Checked</h4>
+    <p>Et deixa seleccionat una opció com a predeterminada</p>
+    <form>
+        <label>Masculí</label>
+        <input type="radio" name="gender" value="male" checked>
+        <label>Femení</label>
+        <input type="radio" name="gender" value="female">        
+        <label>No binari</label>
+        <input type="radio" name="gender" value="no_binary">
+        <button>Envia</button>
+    </form>
+    
+    <h4>Disabled</h4>
+    <p>No et deixa seleccionar una opció</p>
+    <form>
+        <label>Masculí</label>
+        <input type="radio" name="gender" value="male">
+        <label>Femení</label>
+        <input type="radio" name="gender" value="female">        
+        <label>No binari</label>
+        <input type="radio" name="gender" value="no_binary" disabled>
+        <button>Envia</button>
+    </form>
+
+    <h4>Autofocus</h4>
+    <p>Et recomana seleccionar una opció</p>
+    <form>
+        <label>Masculí</label>
+        <input type="radio" name="gender" value="male" autofocus>
+        <label>Femení</label>
+        <input type="radio" name="gender" value="female">        
+        <label>No binari</label>
+        <input type="radio" name="gender" value="no_binary">
+        <button>Envia</button>
+    </form>
+
+    <h4>Required</h4>
+    <p>Et demana que seleccionis aquella opció</p>
+    <form>
+        <label>Masculí</label>
+        <input type="radio" name="gender" value="male" required>
+        <label>Femení</label>
+        <input type="radio" name="gender" value="female">        
+        <label>No binari</label>
+        <input type="radio" name="gender" value="no_binary">
+        <button>Envia</button>
+    </form>
+</body>
+</html>

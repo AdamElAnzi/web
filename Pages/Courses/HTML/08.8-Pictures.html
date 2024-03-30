@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture</title>
+</head>
+<body>
+    <a href="index.html">Index</a>
+
+    <picture>
+        <source srcset="Assets/Imatges/WEBP.webp, /Assets/imatges/ruina.png 2x">
+        <img src="" alt="">
+    </picture>
+
+    <p>L'etiqueta picture no funciona fins que té l'etiqueta img. No fa res si no la té. S'ha de posar el fallback que en aquest cas és l'etiqueta img.</p>
+
+    <p>Podem posar en el srcset un webp o un jpg separats per comes</p>
+
+    <p>srcset amb atribut media="(min-width:1200px) o max-width:1200px"</p>
+</body>
+</html>

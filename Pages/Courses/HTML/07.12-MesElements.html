@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes elements</title>
+</head>
+<body>
+    <p><a href="index.html">Index</a></p>
+    <p><a href="07-Formularis.html">Formularis</a></p>
+
+    <h2>Mes elements dels formularis</h2>
+
+    <h3>Etiqueta fieldset</h3>
+    <p>S'utilitza per agrupar elements dins d'un formulari. Es fa servir l'etiqueta fieldset i també l'etiqueta de legend que permet posar unnom al contingut del fieldset</p>
+
+    <form>
+        <fieldset>
+            <legend>Dades personals</legend>
+            <label for="name">Nom</label>
+            <input type="text" id="name"> 
+            <div>
+                <label for="surname">Cognom</label>
+                <input type="text" id="surname">
+            </div>
+        </fieldset>
+    </form>
+
+    <h3>Input de tipus file</h3>
+    <p>Serveix per afegir un fitxer i enviar-lo</p>
+
+<form>
+    <fieldset>
+        <legend>Dades personals</legend>
+        <label for="name">Nom</label>
+        <input type="text" id="name"> 
+        <div>
+            <label for="surname">Cognom</label>
+            <input type="text" id="surname">
+        </div>
+        <input type="file" name="photo" id="photo">
+    </fieldset>
+</form>
+
+    <h3>Etiqueta Meter</h3>
+    <p>Apart de l'atribut indispensable value, porta atributs min, max, low, high i optimum</p>
+
+    <form>
+        <label for="fuel">Combustible</label>
+        <meter id="fuel" min="0" max="100" value="90" low="30" high="70" optimum="100"></meter>
+    </form>
+
+    <h3>Etiqueta Progress</h3>
+    <p>Porta atributs value i max, una bona pràctica és treballar amb percentatges, una barra amb max 100 i una altra amb max 200, tenen la mateixa longitud</p>
+
+    <form>
+        <label for="task">tasca 1</label>
+        <progress id="task_1" max="100" value="70"></progress>
+        <div>
+            <label for="task">tasca 2</label>
+            <progress id="task_2" max="100" value="25"></progress>
+        </div>
+        <div>
+            <label for="task">tasca 3</label>
+            <progress id="task_3" max="100" value="40"></progress>
+        </div>
+    </form>
+
+    <h3>Etiqueta Textarea</h3>
+    <p>Porta els atributs cols (amplada) i rows (allargada) amb valors numerics</p>
+
+    <form>
+        <div>
+            <label for="message">Escriu el teu missatge</label>
+        </div>
+        <textarea name="message" id="message" cols="80" rows="20"></textarea>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+.header {
+    background-color: black;
+    margin-bottom: 50px;
+    display: flex;
+    font-size: x-large;
+    justify-content: space-around;
+}
+
+.body {
+    margin: 0px;
+}
+
+.a {
+    text-decoration: none;
+    font-size: x-large;
+    color: #0D959B;
+}
+
+.h1 {
+    color: #0D959B;
+}
+
+.footer {
+    background-color: #096E72;
+    margin-top: 150px;
+    display: flex;
+    font-size: x-large;
+    justify-content: space-around;
+}
+
+.a1 {
+    text-decoration: none;
+    font-size: x-large;
+    color: #0D959B;
+}
+
+.caixa2 {
+    height: 470px;
+    width: 250px;
+    background-color: #19adb4;
+    display: inline-block;
+    text-align: center;
+    margin: 42px;
+}
+
+.logo1 {
+    height: 150px;
+    width: 150px;
+    display: inline-block;
+    text-align: center;
+    margin: 55px;
+}
+
+.logo2 {
+    height: 150px;
+    width: 110px;
+
+    margin: 55px;
+}
+
+.logo3 {
+    height: 150px;
+    width: 150px;
+    display: inline-block;
+    text-align: center;
+    margin: 41px;
+}
+
+.p {
+    color: rgb(17, 17, 17);
+    font-size: x-large;
+}

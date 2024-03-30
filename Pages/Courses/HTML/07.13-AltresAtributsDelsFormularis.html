@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Altres atributs dels formularis</title>
+</head>
+<body>
+    <p><a href="index.html">Anar a l'index</a></p>
+    <p><a href="07-Formularis.html">Anar a formularis</a></p>
+
+    <h2>Altres atributs dels formularis</h2>
+
+    <h3>Atribut readonly</h3>
+    <p>El camp no es pot canviar, pero sí que s'envia</p>
+
+    <form>
+        <label for="name">Nom</label>
+        <input type="text" id="name" value="Ibrahim" readonly>
+        <button>Envia</button>
+    </form>
+
+    <h3>Atribut min i max</h3>
+    <p>amb aquest atribut podem bloquejar que algu possi un numero superior o inferior al que volem</p>
+
+    <form>
+        <label for="age">Introdueix la teva edat</label>
+        <input type="number" id="age" min="12" max="19">
+        <button>Envia</button>
+    </form>
+
+    <h3>Atribut selected</h3>
+    <p>Equivalent a l'atribut checked a les etiquetes select</p>
+
+    <form>
+        <label for="menus">Quin menu prefereixes?</label>
+        <select name="menus" id="menus">
+            <option value="first">Primer menú</option>
+            <option value="second" selected>Segon menú</option>
+        </select>
+        <button>Envia</button>
+    </form>
+
+    <h3>Atribut disabled</h3>
+    <p>No ens deixa seleccionar un camp concret</p>
+
+</body>
+</html>

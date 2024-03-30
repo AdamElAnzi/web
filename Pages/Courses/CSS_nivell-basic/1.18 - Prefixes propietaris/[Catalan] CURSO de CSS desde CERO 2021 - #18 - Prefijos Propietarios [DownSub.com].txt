@@ -1,0 +1,662 @@
+al principi d'aquest curs vam veure quin css
+
+a dia d'avui funcionava en mòduls
+
+independents això permetia que cada
+
+mòdul pogués créixer sense dependre del
+
+resta això és la part que vam veure respecte
+
+al funcionament intern de css
+
+tenim l'altra banda que seria el tema
+
+dels navegadors
+
+tant és el que avanci css si els
+
+navegadors no implementen aquestes millores
+
+llavors aquí és on entra el tema de
+
+els prefixos propietaris això significa
+
+que quan una propietat css es
+
+converteix en un estàndard o us comencen a
+
+fer proves amb ella els navegadors
+
+necessiten implementar-la si aquesta
+
+propietat ja s'ha convertit en
+
+recomanació i ha entrat dins del
+
+que pertany a css els prefixos ja no
+
+fan falta però fins que aquesta propietat
+
+arriba a convertir-se en una propietat
+
+com a tal
+
+necessitem col·locar certs prefixos
+
+perquè els navegadors la implementin
+
+o sigui no la implementin sinó que siguin
+
+capaços d'interpretar-la
+
+aquí us estic ensenyant la pàgina de
+
+auto prefix ser que això el que fa és
+
+afegir aquests prefixos per nosaltres no
+
+té cap sentit que nosaltres ens
+
+aprenguem quins prefixos cal posar i
+
+molt menys encara que els posem a mà
+
+perquè quan aquests prefixos no facin
+
+falta hauríem d'anar al nostre
+
+projecte i eliminar tots cosa que
+
+que és una completa bogeria
+
+per això existeix auto pre fixer aquí
+
+tenim quatre propietats que si és la
+
+primera vegada que veieu tss no sabreu per
+
+què serveixen però aquestes quatre propietats
+
+encara no estan implementades a tots
+
+els navegadors amb un suport total
+
+per això si us n'adoneu aquí tenim
+
+display grid que això seria el que
+
+nosaltres escrivim però en el resultat
+
+tenim display un guió ms gris i
+
+després display grid això implica que
+
+com t el prefix ms es per als
+
+microsoft system
+
+també tenim la pròpia vida propietat
+
+transition el punt 5 segons i aquí a
+
+el resultat tenim el webkit transit i
+
+el gol punt 5 segons o transició al
+
+5 punts punt 5 segons i transició
+
+al punt 5 segons webkit és per al
+
+tema de chrome i el guió o és per
+
+òpera per aquí també tenim move que
+
+seria per a mozilla llavors gràcies a
+
+aquests prefixos podem implementar aquestes
+
+millores i que el navegador sigui capaç de
+
+interpretar-ho
+
+i perquè tot això se'ns escrigui
+
+automàticament
+
+no hem de venir auto prefix ser i
+
+enganxar el nostre codi el que anem a
+
+fer és instal·lar un programa que se'n va
+
+a encarregar de fer això per nosaltres aquest
+
+programa és pre pros és un programa
+
+completament gratuït amb l'única
+
+limitació que si no ho pagueu cada
+
+uns minuts o surt una finestreta de
+
+que ho compreu bàsicament funciona
+
+igual que sub line text i winrar són
+
+programes que es poden utilitzar
+
+il·limitadament però que si no els compra
+
+és cada ics temps doncs tindreu
+
+un missatget però excepte per això tot ho
+
+altres ho podeu utilitzar sense problema
+
+així que li donarem aquí a down load
+
+trieu el vostre sistema operatiu en el meu
+
+cas triaré windows
+
+aquí se'ns descarrega
+
+faré clic per instal·lar-lo
+
+i és una instal·lació bastant petiteta
+
+és un programa molt petit anem a
+
+tancar això que ja no cal fuig
+
+perdó anirem a les descàrregues
+
+aquí però setup executar
+
+i ara mateix se'ns obrirà el
+
+instal·lador no hauria de trigar gaire aquí
+
+ho tenim està instal·lant
+
+i ja us dic que això és una instal·lació
+
+que triga molt poquet hauria de trigar
+
+uns 30 40 segons
+
+en una vegada que ha acabat com veieu
+
+windows ens demana permís per utilitzar-lo
+
+li donarem a permetre accés
+
+i després aquí ja tenim la finestra de
+
+pre pros farem clic en aquestes
+
+tres ratlletes que surten aquí i anem a
+
+donar-li a up settings i aquí posaré
+
+el tema fosc perquè ja sabeu que el
+
+tema clar no m'agrada res
+
+i aquí en aquest punt en faré una
+
+petita pausa perquè molts ja sabeu
+
+que és la segona vegada que enregistro aquest
+
+curs i ja em volo els comentaris sé
+
+que hi ha 824 eines que poden
+
+substituir prepers però heu de
+
+tenir en compte que això és un curs
+
+destinat a la major quantitat de gent
+
+possible i he necessitat buscar-ne una
+
+eina que sigui independent de si
+
+saben programar o no si usen visual
+
+studio code o no o totes aquestes coses hi ha
+
+molta gent que està fent aquest curs
+
+que no sap programar que no sap què
+
+és gal que no sap el que és web per
+
+que potser no utilitzen visual studio
+
+code i aquesta eina els va a
+
+permetre fer exactament el mateix que
+
+vosaltres si utilitzeu aquestes eines
+
+llavors a la pregunta que segur que
+
+algú em fa cal fer servir pre
+
+pros 2021 no és necessari n'hi ha d'altres
+
+eines que ho fan però si no
+
+coneixeu altres o no sabeu utilitzar
+
+altres
+
+aquesta us servirà molt bé
+
+i ara ja podem seguir com es
+
+utilitza pre pros agafarem la nostra
+
+carpeta del curs de css
+
+l'obrirem en visual estudi code
+
+que jo aquí ja la tinc oberta
+
+i faré una carpeta nova perquè
+
+no hi hagi conflicte amb res que s'anomeni
+
+nou procés
+
+això és simplement una carpeta de
+
+exemple perquè veieu com funciona vaig
+
+a tancar tot això que tenia de la classe
+
+anterior i aquí crearem el nostre
+
+index.php ml
+
+de html
+
+crearem la nostra carpeta css i
+
+dins els nostres styles
+
+si aconsegueixo escriure'l bé styles punt
+
+css
+
+a l'index fem la nostra plantilla i
+
+link anem l'arxiu
+
+pss esteu css val
+
+agafarem aquesta carpeta que hem
+
+creat la carpeta 9 però col·locaré
+
+una mica això perquè ho veieu bé
+
+i aquesta carpeta la arrosseguem aquí
+
+dins el deixem anar i se us obrirà el
+
+projecte com a tal si feu clic a css
+
+se us desplega l'arxiu que teniu
+
+dins i en fer clic teniu aquesta sèrie
+
+d'opcions que us apareixen aquí
+
+en aquest punt m'interessa que sapigueu
+
+aquesta part d'aquí l'output file que
+
+seria el resultat del css després de
+
+que el processi peperos i la part de
+
+processar automàticament aquest check
+
+vull que el marqui jce ia més teniu
+
+que fixeu-vos si l'opció d'auto pre
+
+fixer està marcada una vegada que tenim
+
+això ja podem tancar aquí
+
+i dividiré això en dues parts per
+
+que veieu el que passa
+
+i nosaltres tenim un styles css li vaig
+
+a minimitzar això i aquí ho teniu aquí
+
+se us ha creat un fitxer press config
+
+que no heu de tocar per res a
+
+absolut val això és simplement la
+
+configuració de premis i si nosaltres
+
+aquí escrivim qualsevol cosa anem a
+
+posar per exemple body background color
+
+per exemple light coral
+
+guardem i automàticament els ha
+
+processat aquest arxiu i ens ho ha
+
+tornat en aquest punt styles list css
+
+com veieu té un aspecte molt similar
+
+només que ho tenim en una única línia
+
+de codi aquest codi que surt aquí és
+
+el codi processat al qual se li van a
+
+afegir els prefixos i totes aquestes coses
+
+nosaltres seguirem treballant sobre
+
+l'arxiu styles css però a l'index
+
+html en lloc de carregar aquest fitxer
+
+carregarem el que ens torna però
+
+ja us dic que aquest arxiu és
+
+únicament perquè ho interpreti el
+
+navegador
+
+veurem com funciona el tema dels
+
+prefixos
+
+tornarem a trump
+
+anem a buscar auto prefix ser una altra vegada
+
+i en aquest punt d'aquí copiarem
+
+aquest arxiu que ens dóna l'objectiu de
+
+això és aconseguir aquest mateix resultat
+
+que nosaltres escrivim això a l'stage
+
+css i ens torna a aquest codi d'aquí
+
+llavors vaig a minimitzar això venim al
+
+styles i l'enganxem aquí guardo i ara
+
+en aquest punt si us adoneu li vaig a
+
+dir que no mini fi que és aquesta opció
+
+d'aquí mini fai css el marcaré i
+
+li donaré a processar arxiu i ara
+
+ja ho tenim una mica diferent si us
+
+doneu compte aquí m'ha afegit prefixos
+
+però no tots els que teníem en aquest
+
+punt en tenim alguns de fet si
+
+comparem el codi en aquest punt de
+
+aquí per exemple display grid no tenim
+
+aquest això d'aquí ni tenim el
+
+transició ni res
+
+això és perquè no li estem dient
+
+quants navegadors enrere o quantes
+
+versions enrere ha d'anar el programa
+
+per defecte agafa em sembla que són dos
+
+llavors modificarem això
+
+vindrem a les tres ratlletes que
+
+tenim aquí que seria el menú fem
+
+clic i donem a project settings
+
+i en aquest punt baixem fins a css tools
+
+i després auto pre fixer en aquest punt
+
+aquí vosaltres ho tindreu o igual o molt
+
+semblant depenent de quan esteu
+
+veient aquest vídeo esborrarem tot el
+
+que ens dóna i aquí a target browsers li
+
+anem a dir cap a quins navegadors
+
+volem apuntar posarem en aquest
+
+punt de fils
+
+val important que ho escriviu igual i
+
+aquí això ja ho podem tancar vaig a
+
+tancar aquest stylelist i li diré
+
+que processi el fitxer
+
+si ara obrim aquest
+
+i potser ho escrit malament
+
+donarem la mini fai
+
+sé que l'estació potser l'escrit
+
+malament a veure com l'escrit project
+
+settings
+
+css tools auto pre fixer és que no hi és
+
+ballet de found
+
+i doneu a intro important important
+
+donar-lo a intro perquè no us passi ho
+
+mateix que a mi tanquem li direm
+
+que processi i ara sí ara com veieu
+
+si han aparegut tots els prefixos
+
+si esteu veient aquest vídeo dins de
+
+uns mesos o d'aquí a un any és possible
+
+que el resultat que tingueu no sigui el
+
+mateix també és possible que el que
+
+vegeu a la pàgina auto pre fixer sigui
+
+diferent això no implica que estigui malament això
+
+implica que s'ha actualitzat i que
+
+esteu al dia pràcticament llavors a
+
+el cas que no us quedi igual que
+
+ara doncs no us preocupeu és tot
+
+perfectament correcte i una vegada
+
+explicat això espero que no hi hagi
+
+quedat cap dubte vaig a minimitzar
+
+pros
+
+i finalment perquè després no hi hagi
+
+preguntes als comentaris a l'index
+
+html utilitzem el resultat que ens dóna
+
+pros a la part de del stylelist val
+
+el que ja té els prefixos però
+
+nosaltres escriurem el codi a
+
+on sempre al style punt css
+
+i abans que se m'oblidi que sapigueu
+
+que pre pros té l'opció de llançar
+
+un servidor de desenvolupament igual que el
+
+que tenim nosaltres en visual studio
+
+code que es fa aquí li doneu a aquests de
+
+on posa server i li doneu open preview
+
+i això us llançarà un servidor de
+
+desenvolupament que es recarregarà
+
+automàticament també de fet
+
+funcionen pràcticament igual i un
+
+apunt per als que em comenta estigueu a
+
+l'altre vídeo que si usant el live
+
+server era necessari fer servir això la
+
+resposta és que són coses diferents
+
+però ho utilitzem per als prefixos
+
+a més tenim l'opció de la recàrrega
+
+automàtica perquè si jo ara em vinc
+
+aquí i escric al body
+
+fa un usant repros i guardem doncs
+
+com veieu funciona perfectament la
+
+recàrrega automàtica i si aquí jo trec
+
+això i li poso body
+
+vindrà un color
+
+lights i green per exemple doncs com
+
+veieu fa el canvi que coses allà de
+
+diferent que això té una petita
+
+animació per fer els canvis més
+
+visuals si jo ara poso aquí xarxa no
+
+fa un canvi tan brusc com l'altre
+
+fa un canvi més progressiu llevant
+
+això pràcticament tots dos fan
+
+exactament el mateix i si venim al
+
+stylist com veieu s'està encarregant de
+
+compilar el sense cap mena de problema
+
+i com aquest vídeo ja se m'està anant un
+
+poquet molt ho deixaré per aquí i
+
+al següent vídeo començarem a
+
+parlar sobre el box model així que
+
+moltíssimes gràcies per veure aquest vídeo i
+
+ens veiem en el següent una salutació i
+
+fins després
+
+espero que t'estigui agradant aquesta nova
+
+edició del curs de css i si creus que
+
+aquest contingut pot ajudar a algú et
+
+animo que ho comparteixis a totes les teves
+
+xarxes socials a més si en tens alguna
+
+dubte o alguna cosa que em vulguis comentar et
+
+deixo a la descripció un link perquè
+
+t'unes a la comunitat de discos on
+
+ja som gairebé 5.000 persones que estem
+
+disposats a fer un cable en qualsevol
+
+cosa que necessitis i si vols estar al
+
+dia de tot el contingut i no perdre't
+
+res t'animo que et subscriguis
+
+fent clic aquí i li donis a la
+
+campaneta perquè youtube t'avisi de
+
+totes les notificacions moltíssimes
+
+gràcies per veure aquest vídeo i ens veiem
+
+al següent una salutació i fins després
+
